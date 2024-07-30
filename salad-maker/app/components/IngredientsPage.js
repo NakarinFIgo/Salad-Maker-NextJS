@@ -26,10 +26,10 @@ export default function IngredeintsPage (){
     return (
         <div className="flex gap-[40px] bg-[#F5F5F5] w-full">
             <Sidebar/>
-            <div className=" w-screen px-6">
+            <div className=" w-screen">
                 <Header/>
-                <div className="mt-10 mb-6 font-bold text-xl ">Select Category</div>
-                <div className="flex gap-4">
+                <div className="mt-[40px] mb-[24px] font-bold text-xl ">Select Category</div>
+                <div className="flex gap-[24px]">
                     {['vegetable','fruit','topping', 'protein', 'dressing'].map(category=>(
                         <div className="grid w-[160px] h-[160px] py-[32px] px-[24px] content-center justify-center bg-white rounded-[16px]">
                             <div>
@@ -41,8 +41,8 @@ export default function IngredeintsPage (){
                         </div>
                     ))}
                 </div>
-                <div className="mt-10 mb-6 text-xl font-bold">Choose yoour ingredients to make a salad</div>
-                <div className="grid grid-cols-4 gap-1">
+                <div className="mt-[40px] mb-6 text-xl font-bold">Choose yoour ingredients to make a salad</div>
+                <div className="grid grid-cols-4 gap-[24px] w-[1495px] pr-[24px]">
                     {ingredients.map((item)=>(
                         <IngredientCard ingredients={item}/>
                     ))}

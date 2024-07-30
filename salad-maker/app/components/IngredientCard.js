@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function IngredientCard({ ingredients }) {
     return (
         <div className="">
-            <div className="bg-white py-[32px] px-[24px] rounded w-[344px] h-[363px]">
+            <div className="bg-white py-[32px] px-[24px] rounded-[16px] w-[344px] h-[363px]">
                 {ingredients.image && <img className='w-[296px] h-[180px]' src={ingredients.image} alt={ingredients.ingredient} />}
                 <div className="relative w-[296px] h-[107px]">
                     <h3 className="text-[18px]">{ingredients.ingredient}</h3>
@@ -12,7 +12,7 @@ export default function IngredientCard({ ingredients }) {
                         <p className="text-[28px] text-[#F8B602]">Cal</p>
                     </div>
                     <span className="absolute right-0">
-                        <motion.svg whileTap={{ scale: 1.2 }} className='w-[40px] bg-yellow-400 text-white rounded-full' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <motion.svg whileTap={{ scale: 1.2 }} className='w-[40px] bg-[#F8B602] text-white rounded-[20px]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
                         </motion.svg>
                     </span>
