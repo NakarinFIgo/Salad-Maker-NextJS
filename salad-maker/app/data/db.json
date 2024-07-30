@@ -1,4 +1,5 @@
-[
+{
+"ingredients": [
   {
     "ingredient": "green leaf lettuce",
     "category": "vegetable",
@@ -133,3 +134,4 @@
     "calories": 60
   }
 ]
+}
